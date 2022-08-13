@@ -1,7 +1,8 @@
 const express = require('express')
 const router = express.Router()
-const review =  require("../controller/reviewController.js")
+const {postIdeas} = require('../controller/ideaController')
+const {getIdeas} = require('../controller/ideaController')
 
-router.get("/", review)
+router.route('/').post(postIdeas).get(getIdeas)
 
 module.exports = router

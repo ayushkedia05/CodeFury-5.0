@@ -9,7 +9,7 @@ dotenv.config({path:'config/config.env'});
 
 const registerRoutes = require("./routes/registerRouter.js")
 const loginRoutes = require("./routes/loginRouter.js")
-const reviewRoutes = require("./routes/reviewRouter.js")
+const ideaRoutes = require("./routes/reviewRouter")
 
 connectDatabase();
 
@@ -24,7 +24,7 @@ app.use(cors())
 
 app.use("/signup", registerRoutes)
 app.use("/login", loginRoutes)
-app.use("/reviews" , reviewRoutes)
+app.use("/idea" , ideaRoutes)
 
 
 const server = app.listen(process.env.PORT,()=>{

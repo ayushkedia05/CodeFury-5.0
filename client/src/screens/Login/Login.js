@@ -32,7 +32,7 @@ function Login() {
         localStorage.setItem("token", data.token)
         localStorage.setItem("currentUser",JSON.stringify(user))
         if (data.message === "Success") {
-          navigate("/select")
+          navigate("/funding")
         } else setInvalidUser(true)
       })
   }
