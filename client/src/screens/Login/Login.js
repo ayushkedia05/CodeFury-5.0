@@ -30,6 +30,7 @@ function Login() {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem("token", data.token)
+        localStorage.setItem("currentUser",JSON.stringify(user))
         if (data.message === "Success") {
           navigate("/select")
         } else setInvalidUser(true)

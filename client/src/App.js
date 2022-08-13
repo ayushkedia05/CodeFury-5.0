@@ -11,6 +11,7 @@ import Select from "./screens/Selection Page/Select"
 import Disease from "./screens/Disease/Disease"
 import Guide from './components/Guide';
 import FinancePage from './screens/Finance/FinancePage';
+import VC from './screens/User/VC';
 
 const theme = createTheme({
   typography: {
@@ -51,6 +52,7 @@ function App() {
               <Route path='disease' element={<Disease />} />
               <Route path='guide' element={<Guide />} />
               <Route path='finance' element={<FinancePage />} />
+              <Route path='funding' element={<VC />} />
 
             </Routes>
           </div>
