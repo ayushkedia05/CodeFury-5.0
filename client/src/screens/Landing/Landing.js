@@ -23,9 +23,9 @@ function Landing() {
         <Button
           className='btns'
           buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--large' 
         >
-          USER LOGIN
+          I'M USER
         </Button>
          
         <Button
@@ -33,7 +33,7 @@ function Landing() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          VC LOGIN
+          I'M VC
         </Button>
        
       </div>

@@ -43,6 +43,7 @@ function App() {
           <div style={{ marginTop: "75px" }}>
             <Routes>
               <Route exact path='/' element={<Landing />} />
+              <Route exact path='demo' element={<Landing />} />
               <Route path='signup' element={<SignUp />} />
               <Route path='login' element={<Login />} />
               <Route path='select' element={<Select />} />
