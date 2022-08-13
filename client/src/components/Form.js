@@ -1,8 +1,13 @@
 import React from 'react';
 import * as Yup from 'yup';
 import { useForm, yupResolver } from '@mantine/form';
+import { Textarea } from '@mantine/core';
 import { NumberInput, TextInput, Button, Box, Group } from '@mantine/core';
 import ReactDOM from 'react-dom'
+import logo from './bg.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 import { useState } from 'react';
 
@@ -31,67 +36,126 @@ function Productform() {
     });
 
     return (
-        <Box sx={{ maxWidth: 640 }} mx="auto">
-            <form onSubmit={form.onSubmit((values) => {
-                setData({
-                    name: values.name,
-                    title: values.title,
-                    description: values.description,
-                    revenue: values.revenue,
-                })
+        
 
-                fetch('http://localhost:4000/idea/', {
-                    method: 'POST', // or 'PUT'
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data),
-                })
-                    .then((response) => response.json())
-                    .then((data) => {
-                        console.log('Success:', data);
-                    })
-                    .catch((error) => {
-                        console.error('Error:', error);
-                    });
-            })}>
+        <div className='w-full flex h-[40%]'>
+            <div className='w-[80%] mt-10 mx-10'>
 
-                <TextInput
-                    required
-                    label="Title"
-                    placeholder="Title"
-                    {...form.getInputProps('title')}
-                />
-                <TextInput
-                    required
-                    label="Name"
-                    placeholder="John Doe"
-                    mt="sm"
-                    {...form.getInputProps('name')}
-                />
-                <TextInput
-                    required
-                    label="Description"
-                    placeholder="about product"
-                    mt="sm"
-                    {...form.getInputProps('description')}
-                />
-                <NumberInput
-                    required
-                    label="Revenue"
-                    placeholder="Enter Revenue Generated SO far.."
-                    mt="sm"
-                    {...form.getInputProps('revenue')}
-                />
+                <Box sx={{ maxWidth: 640 }} >
+                    <form onSubmit={form.onSubmit((values) => {
+                  
+                            console.log('HI')
+                        toast.success("Form Submitted!!")
+                        setData({
+                            title: values.title,
+                            domain: values.domain,
+                            name:values.name,
+                            description: values.description,
+                            revenue: values.revenue,
+                            founders: values.founders,
+                            valuation: values.valuation,
+                            plans: values.plans,
+                            extra: values.extra,
+                        })
+
+                        fetch('http://localhost:4000/idea/', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data),
+                        })
+                            .then((response) => response.json())
+                            .then((data) => {
+                                console.log('Success:', data);
+                            })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            });
+                    })}>
+
+                        <TextInput
+                            className=''
+                            required
+                            label="Your Project Title"
+                            placeholder="Title"
+                            {...form.getInputProps('title')}
+                        />
+                          <TextInput
+                            required
+                            label="Project Domain"
+                            placeholder="Healthcare, Environmental.."
+                            mt="sm"
+                            {...form.getInputProps('domain')}
+                        />
+                        <TextInput
+                            required
+                            label="Creater's Name"
+                            placeholder="John Doe"
+                            mt="sm"
+                            {...form.getInputProps('name')}
+                        />
+                        <Textarea
+                            required
+                            label="Pitch your Idea in no more than 200 Words"
+                            placeholder="about product"
+                            mt="sm"
+                            {...form.getInputProps('description')}
+                        />
+                        <NumberInput
+                            required
+                            label="Total Revenue Generated This year (In Lakhs)"
+                            placeholder="How many Units did you sell"
+                            mt="sm"
+                            {...form.getInputProps('revenue')}
+                        />
+                        <NumberInput
+                            required
+                            label="Number of Founders"
+                            placeholder="1,2,3"
+                            mt="sm"
+                            {...form.getInputProps('founders')}
+                        />
+                      
+                        <NumberInput
+                            required
+                            label="Valuation of the Company (in Lakhs)"
+                            placeholder="100 Crores or what!!"
+                            mt="sm"
+                            {...form.getInputProps('valuation')}
+                        />
+                           <Textarea
+                            required
+                            label="Future Plans & Execution"
+                            placeholder="about product"
+                            mt="sm"
+                            {...form.getInputProps('plans')}
+                        />
+                           <TextInput
+                            required
+                            label="Any Extra Achievement"
+                            placeholder="Google Drive link / Newspaper / Magzine Articles"
+                            mt="sm"
+                            {...form.getInputProps('extra')}
+                        />
 
 
-                <Group position="right" mt="xl">
-                    <Button type="submit">Submit</Button>
-                </Group>
-            </form>
+                        <Group className='my-10 border-2 w-[20%] text-white shadow-lg text-center hover:bg-yellow-500'>
+                            <button type="submit"  className='mx-auto'>Submit</button>
+                        </Group>
+                    </form>
 
 
-        </Box>
+                </Box>
+
+            </div>
+
+            <div className='w-[50%] mx-auto text-center my-auto'>
+                <img className='h-[150%]' src={logo}></img>
+            </div>
+            <ToastContainer autoClose = {5000} />
+        </div>
+
     );
 }
 

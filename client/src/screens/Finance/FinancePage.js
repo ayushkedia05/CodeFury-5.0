@@ -1,6 +1,3 @@
-
-
-import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -26,6 +23,7 @@ import img7 from './images/img7.jpg'
 import img8 from './images/img8.jpg'
 import img9 from './images/img9.jpg'
 import img10 from './images/img10.jpg'
+import { useState } from 'react';
 
 
 
@@ -44,7 +42,7 @@ const ExpandMore = styled((props) => {
 }));
 
 export default function FinancePage(props) {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -57,7 +55,7 @@ export default function FinancePage(props) {
       <CardMedia
         component="img"
         height="194"
-        image={require(`./images/${props.image}.jpg`)}
+        image={`./images/${props.image}.jpg`}
         alt="Finiance tip"
       />
       <CardContent>

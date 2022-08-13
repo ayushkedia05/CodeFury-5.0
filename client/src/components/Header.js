@@ -42,9 +42,9 @@ function Header() {
               onChange={(e, value) => setValue(value)}
             >
 
-              <Tab label='Selection' onClick={() => navigate("/select")} />
+              {/* <Tab label='Selection' onClick={() => navigate("/select")} /> */}
 
-              <Tab label='Financial tips' onClick={() => navigate("/finance")} />
+              {/* <Tab label='Financial tips' onClick={() => navigate("/finance")} /> */}
               <Tab label='Funding' onClick={() => navigate("/funding")} />
 
               <Tab label='Mentorship' onClick={() => navigate("/Mentorship")} />
@@ -54,9 +54,9 @@ function Header() {
               {/* <Tab label='Maps' onClick={() => navigate("/map")} /> */}
             </Tabs>
 
-
+{/* 
             <Btn onClick={() => navigate("/signup")}>SignUp</Btn>
-            <Btn onClick={() => navigate("/login")}>LogIn</Btn>
+            <Btn onClick={() => navigate("/login")}>LogIn</Btn> */}
           </Box>
 
 {/* ---------------------------------------------------------------------------------------------------------- */}
