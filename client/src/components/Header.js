@@ -44,11 +44,11 @@ function Header() {
 
               <Tab label='Selection' onClick={() => navigate("/select")} />
 
-              <Tab label='Disease Search' onClick={() => navigate("/disease")} />
+              <Tab label='Financial tips' onClick={() => navigate("/finance")} />
               <Tab label='Funding' onClick={() => navigate("/funding")} />
 
               <Tab label='Mentorship' onClick={() => navigate("/Mentorship")} />
-
+            
               <Tab label='Guide' onClick={() => navigate("/guide")} />
               {/* <Tab label='Joined Events' onClick={() => navigate("/joinedevents")} /> */}
               {/* <Tab label='Maps' onClick={() => navigate("/map")} /> */}

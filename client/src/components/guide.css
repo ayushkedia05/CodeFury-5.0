@@ -49,7 +49,7 @@ font-family: 'Nunito Sans', sans-serif;
     height: 102vh;
     width: 50%;
     transition: all 1.3s ease;
-    background: rgba(94, 19, 48, 0.8);
+    background: rgba(122, 119, 120, 0.288);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +76,7 @@ font-family: 'Nunito Sans', sans-serif;
     width: 50%;
     transition: all 1.3s ease;
     /* border-left: 2px solid black; */
-    background: rgb(23 36 26 / 80%);
+    background: rgba(70, 71, 70, 0.534);
     display: flex;
     justify-content: center;
     align-items: center;
