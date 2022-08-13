@@ -1,20 +1,32 @@
 const mongoose = require('mongoose')
 
 const IdeaSchema = new mongoose.Schema({
-  name:{
+  title:{
     type:String,
-    required:true,
   },
-  title: {
+  domain: {
     type: String,
-    required: true,
+  },
+  name: {
+    type: String,
   },
   description: {
     type: String,
-    required: true,
+  },
+  founders: {
+    type: Number,
   },
   revenue: {
     type: Number,
+  },
+  valuation: {
+    type: Number,
+  },
+  plans: {
+    type: String,
+  },
+  extra: {
+    type: String,
   },
 })
 

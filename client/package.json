@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.9.3",
+    "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.9.3",
     "@mantine/core": "^5.1.5",
+
     "@mantine/form": "^5.1.5",
+
     "@mantine/hooks": "^5.1.5",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.6",
@@ -22,7 +24,11 @@
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+
     "react-toastify": "^9.0.8",
+
+    "react-snap": "^1.23.0",
+
     "styled-components": "^5.3.5",
     "typewriter-effect": "^2.18.2",
     "universal-cookie": "^4.0.4",
@@ -33,6 +39,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -42,7 +42,10 @@ function Header() {
               onChange={(e, value) => setValue(value)}
             >
 
+
               {/* <Tab label='Selection' onClick={() => navigate("/select")} /> */}
+
+              <Tab label='Job portal' onClick={() => navigate("/jobportal")} />
 
               {/* <Tab label='Financial tips' onClick={() => navigate("/finance")} /> */}
               <Tab label='Funding' onClick={() => navigate("/funding")} />
