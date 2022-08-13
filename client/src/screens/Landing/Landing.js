@@ -2,6 +2,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 // import { Button } from './Button';
+import { Link } from 'react-router-dom';
+
 
 import './HeroSection.css';
 function Landing() {
@@ -21,9 +23,9 @@ function Landing() {
             /></h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns11'>
-      <button class="button">I'M USER</button>
+      <Link to='/signup' className='btn22-mobile'>  <button class="button">I'M USER</button> </Link>
          
-      <button class="button">I'M VC</button>
+      <Link to='/signup' className='btn22-mobile'>  <button class="button">I'M VC</button></Link>
        
       </div>
     </div>
