@@ -1,60 +1,45 @@
-import { Box, Grid, Typography } from "@mui/material";
+
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Image from "./none.png";
-
+import { Button } from './Button';
+import './HeroSection.css';
 function Landing() {
   return (
-    <Box
-      sx={{
-        width: "100%",
-        color: "white",
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <Grid container sx={{ width: "100vw", height: `calc(100vh - 75px)` }}>
-        <Grid item xl={6} sx={{ display: "flex", justifyContent: "center" }}>
-          <Typography
-            sx={{
-              alignItems: "center",
-              display: "flex",
-              fontWeigh9t: 700,
-              fontSize: "50px",
-              letterSpacing: "2px",
-            }}
-          >
-            <Typewriter
+ 
+    
+        <div className='hero-container'>
+      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <h1><Typewriter
               options={{
                 strings: [
-                  "Confused Which Hospital to Go?",
-                  "We will help you decide,",
-                  "Search for Any disease or Hospital.",
+                  "Build your dreams"
                 ],
                 autoStart: true,
                 loop: true,
               }}
-            />
-          </Typography>
-        </Grid>
-        <Grid item xl={6} sx={{ display: "inline", justifyContent: "center" }}>
-          <div
-            style={{
-              height: "80%",
-              width: "80%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundImage: `url(${Image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-          
-          </div>
-        </Grid>
-      </Grid>
-    </Box>
+            /></h1>
+      <p>What are you waiting for?</p>
+      <div className='hero-btns'>
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+        >
+          USER LOGIN
+        </Button>
+         
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+        >
+          VC LOGIN
+        </Button>
+       
+      </div>
+    </div>
+      
+    
   );
 }
 
