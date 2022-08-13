@@ -11,6 +11,7 @@ import Select from "./screens/Selection Page/Select"
 import Disease from "./screens/Disease/Disease"
 import Guide from './components/Guide';
 import FinancePage from './screens/Finance/FinancePage';
+import Displaycards from './screens/Finance/displaycards';
 import VC from './screens/User/VC';
 import Course from './screens/course/course';
 
@@ -52,7 +53,7 @@ function App() {
               {/* <Route path='map' element={<Map />} /> */}
               {/* <Route path='Mentorship' element={<Disease />} /> */}
               <Route path='guide' element={<Guide />} />
-              <Route path='finance' element={<FinancePage />} />
+              <Route path='finance' element={<Displaycards />} />
               <Route path='funding' element={<VC />} />
 
             </Routes>

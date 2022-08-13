@@ -8,6 +8,9 @@
     "@mantine/core": "^5.1.5",
     "@mantine/form": "^5.1.5",
     "@mantine/hooks": "^5.1.5",
+
+    "@mui/icons-material": "^5.8.4",
+
     "@mui/material": "^5.8.6",
     "@reach/combobox": "^0.17.0",
     "@react-google-maps/api": "^2.12.0",

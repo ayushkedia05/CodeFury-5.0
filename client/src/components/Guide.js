@@ -33,7 +33,7 @@ const Guide = () => {
       </div>
 
       <div className='right' onMouseEnter={func3} onMouseLeave={func4}>
-        <a> I am a Patient </a>
+        <a> business Strategy </a>
       </div>
 
     </div>
