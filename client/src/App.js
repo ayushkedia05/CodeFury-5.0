@@ -9,8 +9,8 @@ import SignUp from "./screens/Signup/SignUp"
 import Login from "./screens/Login/Login"
 import Select from "./screens/Selection Page/Select"
 import Disease from "./screens/Disease/Disease"
-import Map from "./screens/Map/Map"
-import Reviews from './components/Review';
+import Guide from './components/Guide';
+import FinancePage from './screens/Finance/FinancePage';
 
 const theme = createTheme({
   typography: {
@@ -47,9 +47,10 @@ function App() {
               <Route path='signup' element={<SignUp />} />
               <Route path='login' element={<Login />} />
               <Route path='select' element={<Select />} />
-              <Route path='map' element={<Map />} />
+              {/* <Route path='map' element={<Map />} /> */}
               <Route path='disease' element={<Disease />} />
-              <Route path='reviews' element={<Reviews />} />
+              <Route path='guide' element={<Guide />} />
+              <Route path='finance' element={<FinancePage />} />
 
             </Routes>
           </div>
