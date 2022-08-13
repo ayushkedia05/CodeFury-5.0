@@ -32,13 +32,13 @@ video {
     'Lucida Sans', Arial, sans-serif;
 }
 
-.hero-btns {
+.hero-btns11 {
   margin-top: 32px;
 }
 .forflex{
 display: flex;
 }
-.hero-btns .btn {
+.hero-btns11 .btns11 {
   margin: 6px;
 }
 
@@ -63,12 +63,29 @@ display: flex;
     font-size: 30px;
   }
 
-  .btn-mobile {
+  .btns11-mobile {
     display: block;
     text-decoration: none;
   }
 
-  .btn {
+  .btns11 {
     width: 100%;
   }
+}
+.button {
+  background-color: #4344437a;
+  border: none;
+  color: white;
+  padding: 25px 82px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.button:hover{
+  background-color: rgb(32, 34, 34);
 }

@@ -20,6 +20,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .outer{
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;

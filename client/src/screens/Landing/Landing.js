@@ -1,7 +1,8 @@
 
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { Button } from './Button';
+// import { Button } from './Button';
+
 import './HeroSection.css';
 function Landing() {
   return (
@@ -19,22 +20,10 @@ function Landing() {
               }}
             /></h1>
       <p>What are you waiting for?</p>
-      <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large' 
-        >
-          I'M USER
-        </Button>
+      <div className='hero-btns11'>
+      <button class="button">I'M USER</button>
          
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          I'M VC
-        </Button>
+      <button class="button">I'M VC</button>
        
       </div>
     </div>
