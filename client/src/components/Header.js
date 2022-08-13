@@ -44,9 +44,9 @@ function Header() {
 
               <Tab label='Selection' onClick={() => navigate("/select")} />
               <Tab label='Disease Search' onClick={() => navigate("/disease")} />
-              <Tab label='Reviews' onClick={() => navigate("/reviews")} />
+              <Tab label='Guide' onClick={() => navigate("/guide")} />
               {/* <Tab label='Joined Events' onClick={() => navigate("/joinedevents")} /> */}
-              <Tab label='Maps' onClick={() => navigate("/map")} />
+              {/* <Tab label='Maps' onClick={() => navigate("/map")} /> */}
             </Tabs>
 
 
