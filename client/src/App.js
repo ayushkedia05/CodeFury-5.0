@@ -11,7 +11,7 @@ import Select from "./screens/Selection Page/Select"
 import Disease from "./screens/Disease/Disease"
 import Guide from './components/Guide';
 import FinancePage from './screens/Finance/FinancePage';
-
+import Course from './screens/course/course';
 const theme = createTheme({
   typography: {
     allVariants: {
@@ -43,12 +43,12 @@ function App() {
           <div style={{ marginTop: "75px" }}>
             <Routes>
               <Route exact path='/' element={<Landing />} />
-              <Route exact path='demo' element={<Landing />} />
+              <Route exact path='Mentorship' element={<Course />} />
               <Route path='signup' element={<SignUp />} />
               <Route path='login' element={<Login />} />
               <Route path='select' element={<Select />} />
               {/* <Route path='map' element={<Map />} /> */}
-              <Route path='disease' element={<Disease />} />
+              {/* <Route path='Mentorship' element={<Disease />} /> */}
               <Route path='guide' element={<Guide />} />
               <Route path='finance' element={<FinancePage />} />
 

@@ -5,7 +5,7 @@
 // export function Button() {
 //   return (
 //     <Link to='sign-up'>
-//       <button className='btn'>Sign Up</button>
+//       <button className='btn2222'>Sign Up</button>
 //     </Link>
 //   );
 // }
@@ -14,9 +14,9 @@ import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
+const STYLES = ['btn22--primary', 'btn22--outline', 'btn22--test'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn22--medium', 'btn22--large'];
 
 export const Button = ({
   children,
@@ -32,9 +32,9 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <Link to='/sign-up' className='btn22-mobile'>
       <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        className={`btn22 ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
         type={type}
       >
