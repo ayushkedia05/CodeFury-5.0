@@ -9,7 +9,7 @@ const Finance = () => {
     <>
 
     <div className='f flex-col  h-full absolute top-20 text-white text-2xl font-mono'>
-        <h1 className='my-4 mb-8 mx-auto underline'>Welcome to the <span className='text-green-300 font-bold' >Finance Guide </span></h1>
+        <h1 className='my-4 mb-8 mx-auto underline' style={{color:'black'}}>Welcome to the <span className='font-bold' style={{color:'black'}} >Finance Guide </span></h1>
 
         <h1 className='text-xl mb-12 text-gray-100 w-[70%] bg-gray-600 p-8 rounded-xl mx-auto shadow-lg'>Every business needs financial stability. Yes, cash flow is important, but not at the risk of losing control over finances. What are the financial challenges that a business, especially a start-up, is likely to face? Are you prepared to tackle them and survive any financial instability?</h1>
         {/* <KeyboardDoubleArrowDownIcon /> */}
