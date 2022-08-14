@@ -2,7 +2,7 @@ import React from 'react'
 import Finance from './Finance'
 import './guide.css'
 import { useNavigate } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 const Guide = () => {
 
   let navigate = useNavigate()
@@ -33,7 +33,7 @@ const Guide = () => {
       </div>
 
       <div className='right' onMouseEnter={func3} onMouseLeave={func4}>
-        <a> business Strategy </a>
+        <Link to='/business'> business Strategy </Link>
       </div>
 
     </div>

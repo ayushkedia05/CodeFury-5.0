@@ -3,7 +3,7 @@ const Idea = require('../models/IdeaModel')
 
 exports.postIdeas = async (req, res) => {
     const idea = await Idea.create(req.body)
-
+    console.log(req.body);
     res.status(201).json({
             success: true,
             idea

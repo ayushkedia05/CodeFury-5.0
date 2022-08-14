@@ -16,6 +16,7 @@ import VC from './screens/User/VC';
 import Course from './screens/course/course';
 import Appp from './recruit/App.js'
 import Jobs from './recruit/components/Jobs';
+import DisplaycardsB from './screens/business/displaycards';
 const theme = createTheme({
   typography: {
     allVariants: {
@@ -52,7 +53,7 @@ function App() {
               <Route path='login' element={<Login />} />
               <Route path='select' element={<Select />} />
               {/* <Route path='map' element={<Map />} /> */}
-              {/* <Route path='Mentorship' element={<Disease />} /> */}
+              <Route path='business' element={<DisplaycardsB />} />
               <Route path='guide' element={<Guide />} />
               <Route path='jobportal' element={<Jobs />} />
               <Route path='finance' element={<Displaycards />} />

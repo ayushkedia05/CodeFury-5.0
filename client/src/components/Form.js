@@ -8,7 +8,7 @@ import logo from './bg.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
   
-
+import axios from 'axios';
 import { useState } from 'react';
 
 const schema = Yup.object().shape({
@@ -25,12 +25,15 @@ function Productform() {
     const form = useForm({
         schema: yupResolver(schema),
         initialValues: {
-            name: '',
-            email: '',
+            title: '',
+            domain: '',
+            name:'',
             description: '',
-            address: '',
-            phone: "",
-            category: ""
+            revenue: '',
+            founders: "",
+            valuation: "",
+            plans:"",
+            extra:""    
 
         },
     });
@@ -46,7 +49,7 @@ function Productform() {
                   
                             console.log('HI')
                         toast.success("Form Submitted!!")
-                        setData({
+                        let startdata={
                             title: values.title,
                             domain: values.domain,
                             name:values.name,
@@ -56,22 +59,17 @@ function Productform() {
                             valuation: values.valuation,
                             plans: values.plans,
                             extra: values.extra,
-                        })
+                        }
 
-                        fetch('http://localhost:4000/idea/', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(data),
-                        })
-                            .then((response) => response.json())
-                            .then((data) => {
-                                console.log('Success:', data);
-                            })
-                            .catch((error) => {
-                                console.error('Error:', error);
-                            });
+                        const getback=axios.post('http://localhost:4000/idea/',startdata);  
+                        getback.then(value=>  {
+                            console.log(value);
+                  
+                             
+                          
+                  
+                          })
+                        
                     })}>
 
                         <TextInput

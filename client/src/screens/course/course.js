@@ -315,14 +315,7 @@ const Course=()=>{
 <div className="course">
   <header className="header">
     <nav className="nav">
-      <img
-        src={logo}
-        alt="Bankist logo"
-        className="nav__logo"
-        id="logo"
-        designer="Jonas"
-        data-version-number={3.0}
-      />
+     
       <ul className="nav__links">
         <li className="nav__item">
           <a className="nav__link" href="#section--1">
@@ -439,13 +432,13 @@ const Course=()=>{
           className="btn operations__tab operations__tab--1 operations__tab--active"
           data-tab={1}
         >
-          <span>01</span>Instant start
+          <span>01</span>legal guidance
         </button>
         <button className="btn operations__tab operations__tab--2" data-tab={2}>
-          <span>02</span>Instant learning
+          <span>02</span>mass survey
         </button>
         <button className="btn operations__tab operations__tab--3" data-tab={3}>
-          <span>03</span>Instant refunds
+          <span>03</span>Conect with incubators
         </button>
       </div>
       <div className="operations__content operations__content--1 operations__content--active">
@@ -455,13 +448,10 @@ const Course=()=>{
           </svg>
         </div>
         <h5 className="operations__header">
-          Start the course instantly no ads and disturbance.
+          get the legal guidance and connect with top lawyer
         </h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Our platform provide the legal guidance to all the problem and also get the top cooperate lawyer to provide the best
         </p>
       </div>
       <div className="operations__content operations__content--2">
@@ -471,13 +461,10 @@ const Course=()=>{
           </svg>
         </div>
         <h5 className="operations__header">
-           make your dreams come true
+           get the right statistics
         </h5>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+         We provide a mass survey of your idea ,by pitching the idea to the public and getting th e reviews so that you can take the right decision. 
         </p>
       </div>
       <div className="operations__content operations__content--3">
@@ -487,13 +474,10 @@ const Course=()=>{
           </svg>
         </div>
         <h5 className="operations__header">
-          Not getting help with the course? No problem! Close it instantly.
+          get more
         </h5>
         <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+        Not just the VC we also provide connection to company and college incubators for better guidance and expansion.
         </p>
       </div>
     </div>
@@ -520,7 +504,7 @@ const Course=()=>{
           <address className="testimonial__author">
             <img src={user1} alt="" className="testimonial__photo" />
             <h6 className="testimonial__name">Aarav Lynn</h6>
-            <p className="testimonial__location">San Francisco, USA</p>
+            <p className="testimonial__location">Bengaluru,INDIA</p>
           </address>
         </div>
       </div>
@@ -619,13 +603,9 @@ const Course=()=>{
     <img src={icon} alt="Logo" className="footer__logo" />
     <p className="footer__copyright">
       © Copyright by <br></br>
-      <a
-        className="footer__link twitter-link"
-        target="_blank"
-        href="https://twitter.com/jonasschmedtman"
-      >
+      
          kryptonite
-      </a>
+      
       
     </p>
   </footer>
